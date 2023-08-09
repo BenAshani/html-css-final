@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+.apple-logo {
+    padding-left: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.apple-logo i {
+    font-size: 28px;
+    margin-right: 3px;
+    color: white;
+    padding-left: 200px;
+}
+
+.apple-logo span {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.nav-containor {
+    height: 100px;
+    background: black;
+    padding-bottom: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-header {
+    /* position: fixed; */
+    width: 100vw;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+    padding-right: 200px;
+}
+
+header img {
+    height: 42px;
+    width: 35px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.apple-logo {
+    padding-left: 300px;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar li {
+    font-size: 1.7rem;
+    padding: 5px 0px;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.small-nav {
+    display: none;
+    max-width: 100vw;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containor {
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+.card {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.img img {
+    max-width: 100%;
+    display: inherit;
+    animation: fade 3s ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.card-content {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2.pro-name {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    line-height: 34px;
+    color: hsl(212, 21%, 14%);
+    padding-bottom: 20px;
+}
+
+p.pro-des {
+    color: hsl(228, 12%, 48%);
+    line-height: 23px;
+}
+
+p.current-price {
+    font-family: 'Fraunces', serif;
+    color: hsl(200, 62%, 56%);
+    font-size: 35px;
+    margin: 25px;
+}
+
+p.old-price {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+
+.pro-price {
+    display: flex;
+    align-items: center;
+}
+
+button.cart {
+    background-color: hsl(200, 80%, 78%);
+    border: none;
+    border-radius: 15px;
+    height: 60px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 0;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    width: 100%;
+}
+
+button.cart:hover {
+    background-color: hsl(200, 62%, 56%);
+}
+
+button.cart img {
+    padding-right: 8px;
+}
+
+button.back-btn {
+    background-color: hsl(200, 80%, 78%);
+    border: none;
+    border-radius: 15px;
+    height: 60px;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 0;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    padding-bottom: 10px;
+}
+
+button.back-btn:hover {
+    background-color: hsl(200, 62%, 56%);
+}
+
+.back-btn {
+    padding-top: 10px;
+}
+
+.pro-name {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-200%);
+      opacity: 0;
+    /* animation-delay: 2s; */
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-p {
+    animation: slideAnim1 3s ease-in-out;
+}
+
+.animate-slide {
+    animation: slideAnim 1s ease-in-out;
+}
+
+
+@keyframes slideAnim {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideAnim1 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.footer-containor {
+    justify-content: center;
+    display: flex;
+    padding: 40px;
+}
+
+.footer-icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.button-a {
+    text-decoration: none;
+    opacity: 0.7;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    padding: 5px;
+}
+
+.button-a:hover {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .apple-logo {
+        padding-left: 200px;
+        transition: all .50s ease
+    }
+}
+
+@media (min-width: 1001px) {
+    .main-header {
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    a.apple-logo {
+        padding: 20px;
+    }
+
+    .navbar {
+        padding-right: 100px;
+    }
+}
+
+
+@media (max-width: 1081px) {
+    .main-header {
+        display: none;
+        transition: all .50s ease;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    .small-nav {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: space-between;
+        padding: 13px 0px;
+        transition: all .50s ease ease-in-out;
+    }
+
+    .nav-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px;
+        padding-right: 35px;
+        font-size: 0.8rem;
+        padding-right: 5px;
+    }
+
+    .small-nav a {
+        text-decoration: none;
+        list-style: none;
+        padding-right: 5px;
+    }
+
+    .small-nav span {
+        padding-right: 5px;
+        
+    }
+
+    #macbook-icon {
+        margin: 0;
+        width: 55px;
+    }
+}
+
+@media (max-width:800px){
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        padding: 30px;
+        width: 70%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .back-btn {
+        padding-top: 20px;
+    }
+}
