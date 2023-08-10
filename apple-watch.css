@@ -285,6 +285,10 @@ button.back-btn:hover {
     opacity: 1;
 }
 
+#copyright {
+    text-align: center;
+}
+
 @media (max-width:800px){
 
     .card {

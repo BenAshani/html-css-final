@@ -287,6 +287,10 @@ button.back-btn:hover {
     opacity: 1;
 }
 
+#copyright {
+    text-align: center;
+}
+
 @media (max-width: 1200px) {
     .apple-logo {
         padding-left: 200px;
