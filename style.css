@@ -1,237 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
 
 * {
-    font-family: 'Outfit', sans-serif;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .apple-logo {
-    padding-left: 50px;
-    color: white;
-    display: flex;
-    align-items: center;
+  padding-left: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 
 .apple-logo i {
-    font-size: 28px;
-    margin-right: 3px;
-    color: white;
-    padding-left: 200px;
+  font-size: 28px;
+  margin-right: 3px;
+  color: white;
+  padding-left: 200px;
 }
 
 .apple-logo span {
-    font-size: 1.7rem;
-    color: white;
+  font-size: 1.7rem;
+  color: white;
 }
 
 .nav-containor {
-    height: 100px;
-    background: black;
-    padding-bottom: 30px;
-    color: white;
-    text-decoration: none;
+  height: 100px;
+  background: black;
+  padding-bottom: 30px;
+  color: white;
+  text-decoration: none;
 }
 
 .main-header {
-    /* position: fixed; */
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    padding: 28px 12%;
-    transition: all .50s ease;
+  /* position: fixed; */
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 12%;
+  transition: all 0.5s ease;
 }
 
 header img {
-    height: 42px;
-    width: 35px;
-    margin-right: 10px;
-    padding-bottom: 5px;
+  height: 42px;
+  width: 35px;
+  margin-right: 10px;
+  padding-bottom: 5px;
 }
 
 .apple-logo {
-    padding-left: 300px;
-
+  padding-left: 300px;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
 }
 
 .navbar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .navbar li {
-    font-size: 1.7rem;
-    padding: 5px 0px;
-    margin: 0px 30px;
-    transition: all .50s ease;
+  font-size: 1.7rem;
+  padding: 5px 0px;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 #apple-video {
-    width: 100%;
-    height: 480px;
-    padding-bottom: 30px;
-    padding-top: 100px;
+  width: 100%;
+  height: 480px;
+  padding-bottom: 30px;
+  padding-top: 100px;
 }
 
 .footer-containor {
-    justify-content: center;
-    display: flex;
+  justify-content: center;
+  display: flex;
 }
 
 .footer-icon {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .button-a {
-    text-decoration: none;
-    opacity: 0.7;
-    transition: ease-in-out;
-    transition-duration: 0.5s;
-    padding: 5px;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+  padding: 5px;
 }
 
 .button-a:hover {
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    opacity: 1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  opacity: 1;
 }
 
 .small-nav {
-    display: none;
-    max-width: 100vw;
+  display: none;
+  max-width: 100vw;
 }
 
 @media (max-width: 1200px) {
-    .apple-logo {
-        padding-left: 200px;
-        transition: all .50s ease
-    }
+  .apple-logo {
+    padding-left: 200px;
+    transition: all 0.5s ease;
+  }
 }
 
 @media (min-width: 1001px) {
-    .main-header {
-        padding: 0;
-        padding-top: 20px;
-    }
+  .main-header {
+    padding: 0;
+    padding-top: 20px;
+  }
 
-    a.apple-logo {
-        padding: 20px;
-    }
+  a.apple-logo {
+    padding: 20px;
+  }
 
-    .navbar {
-        padding-right: 200px;
-    }
+  .navbar {
+    padding-right: 200px;
+  }
 }
 
 @media (max-width: 1081px) {
-    .main-header {
-        display: none;
-        transition: all .50s ease;
-    }
+  .main-header {
+    display: none;
+    transition: all 0.5s ease;
+  }
 }
 
 @media (max-width: 1080px) {
+  .small-nav {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 0px;
+    transition: all 0.5s ease ease-in-out;
+  }
 
-    .small-nav {
-        display: block;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-        padding: 25px 0px;
-        transition: all .50s ease ease-in-out;
-    }
+  .nav-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    padding-right: 35px;
+    font-size: 0.8rem;
+    padding-right: 5px;
+  }
 
-    .nav-icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 15px;
-        padding-right: 35px;
-        font-size: 0.8rem;
-        padding-right: 5px;
-    }
+  .small-nav a {
+    text-decoration: none;
+    list-style: none;
+    padding-right: 5px;
+  }
 
-    .small-nav a {
-        text-decoration: none;
-        list-style: none;
-        padding-right: 5px;
-    }
+  .small-nav span {
+    padding-right: 5px;
+  }
 
-    .small-nav span {
-        padding-right: 5px;
-        
-    }
-
-    #macbook-icon {
-        margin: 0;
-        width: 55px;
-    }
+  #macbook-icon {
+    margin: 0;
+    width: 55px;
+  }
 }
 
-@media only screen and (max-width:944px) {
-    .home-video {
-        padding: 20px;
-        padding-top: 100px;
-        transition: all .50s ease;
-    }
+@media only screen and (max-width: 944px) {
+  .home-video {
+    padding: 20px;
+    padding-top: 100px;
+    transition: all 0.5s ease;
+  }
 
-    label #menu-btn {
-        display: block;
-    }
+  label #menu-btn {
+    display: block;
+  }
 }
 
 @media (max-width: 500px) {
-    .navbar li {
-        font-size: 1.2rem;
-        padding-top: 0px;
-    }
+  .navbar li {
+    font-size: 1.2rem;
+    padding-top: 0px;
+  }
 
-    .navbar ul {
-        padding-top: 0px;
-    }
+  .navbar ul {
+    padding-top: 0px;
+  }
 
-    .small-nav {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-    
-    .nav-icon span {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .small-nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
 
-    .nav-containor {
-        max-width: 100vw;
-        padding-top: 20px;
-    }
+  .nav-icon span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-containor {
+    max-width: 100vw;
+    padding-top: 20px;
+  }
 }
