@@ -124,12 +124,13 @@ header img {
 
 @keyframes fade {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
 
 .card-content {
     padding: 35px;
@@ -213,20 +214,21 @@ button.back-btn:hover {
 
 .pro-name {
     animation: slideIn 1s ease-in-out;
-  }
-  
-  @keyframes slideIn {
-    0% {
-      transform: translateY(-200%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+}
 
-  .animate-slide-p {
+@keyframes slideIn {
+    0% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-p {
     animation: slideAnim1 3s ease-in-out;
 }
 
@@ -310,7 +312,6 @@ button.back-btn:hover {
     }
 }
 
-
 @media (max-width: 1081px) {
     .main-header {
         display: none;
@@ -349,7 +350,7 @@ button.back-btn:hover {
 
     .small-nav span {
         padding-right: 5px;
-        
+
     }
 
     .small-nav img {
@@ -362,8 +363,7 @@ button.back-btn:hover {
     }
 }
 
-
-@media (max-width:800px){
+@media (max-width:800px) {
 
     .card {
         display: flex;

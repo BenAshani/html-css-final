@@ -89,7 +89,6 @@ header img {
     color: white;
 }
 
-
 .navbar ul {
     display: flex;
     flex-direction: row;
@@ -139,7 +138,6 @@ header img {
     }
   }
 
-
 .card-content {
     padding: 35px;
     display: flex;
@@ -172,7 +170,6 @@ p.old-price {
     font-size: 14px;
     text-decoration: line-through;
 }
-
 
 .pro-price {
     display: flex;
@@ -225,7 +222,6 @@ button.back-btn:hover {
 .back-btn {
     padding-top: 10px;
 }
-
 
 .animate-slide {
     animation: slideAnim 1s ease-in-out;
@@ -374,10 +370,6 @@ button.back-btn:hover {
         padding-right: 5px;
         
     }
-
-    /* .nav-icon img {
-        padding-right: 50px;
-    } */
 
     #macbook-icon {
         margin: 0;

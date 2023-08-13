@@ -40,7 +40,6 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 .main-header {
-    /* position: fixed; */
     width: 100vw;
     top: 0;
     right: 0;
@@ -114,8 +113,6 @@ body {
     padding: 0 30px;
 }
 
-
-
 .card {
     max-width: 700px;
     display: grid;
@@ -174,7 +171,6 @@ p.old-price {
     font-size: 14px;
     text-decoration: line-through;
 }
-
 
 .pro-price {
     display: flex;
@@ -235,7 +231,6 @@ button.back-btn:hover {
 .animate-slide {
     animation: slideAnim 1s ease-in-out;
 }
-
 
 @keyframes slideAnim {
     0% {
@@ -313,7 +308,6 @@ button.back-btn:hover {
     }
 }
 
-
 @media (max-width: 1081px) {
     .main-header {
         display: none;
@@ -360,7 +354,6 @@ button.back-btn:hover {
         width: 55px;
     }
 }
-
 
 @media (max-width:800px){
 
